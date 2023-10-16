@@ -1,13 +1,13 @@
 document.addEventListener("click", (e) => {
     if (e.target.matches("button[id = lighttheme]")) {
         document.body.classList.remove("dark-mode");
-        document.body.classList.remove("sandia-mode");   
+        document.body.classList.remove("batman-mode");   
         alert(`Has cambiado al Tema ${e.target.dataset.name}`);
     }
     if (e.target.matches("button[id = darktheme]")) {
         document.body.classList.add("dark-mode");
         document.body.classList.remove("light-mode");
-        document.body.classList.remove("sandia-mode");
+        document.body.classList.remove("batman-mode");
         alert(`Has cambiado al Tema ${e.target.dataset.name}`);
     }
     if (e.target.matches("button[id = batmantheme]")) {
@@ -16,7 +16,7 @@ document.addEventListener("click", (e) => {
         document.body.classList.remove("light-mode");
         alert(`Has cambiado al Tema ${e.target.dataset.name}`);
     }
-})
+}) 
 
 document.addEventListener("dblclick", (e) =>
 {
