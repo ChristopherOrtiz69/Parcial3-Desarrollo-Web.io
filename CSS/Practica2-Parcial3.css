@@ -1,0 +1,19 @@
+.light-mode {
+    background-color:#eee;
+    color: #222;
+  }
+
+.dark-mode {
+    background-color: #222;
+    color: #eee;
+  }
+
+.batman-mode {
+    background-image: url(../img/batman.jpg);
+    color: #1c36a0;
+  }
+
+  .btn {
+    padding: 10px;
+    width: 150px;
+  }
