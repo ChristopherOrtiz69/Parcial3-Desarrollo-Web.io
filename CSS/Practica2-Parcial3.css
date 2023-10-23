@@ -3,10 +3,10 @@
     color: #222;
   }
 
-.dark-mode {
+/*.dark-mode {
     background-color: #222;
     color: #eee;
-  }
+  }*/
 
 .batman-mode {
     background-image: url(../img/batman.jpg);
@@ -17,3 +17,7 @@
     padding: 10px;
     width: 150px;
   }
+  .dark-mode {
+    background-color: #000;
+    color: #fff;
+}
