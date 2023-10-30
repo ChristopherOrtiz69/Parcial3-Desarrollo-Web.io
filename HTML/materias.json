@@ -1,0 +1,27 @@
+[
+    {
+        "nombre": "Proyecto semestral",
+        "docente": "mircha",
+        "descripcion": "Desarrollo de un proyecto a lo largo del semestre."
+    },
+    {
+        "nombre": "Inteligencia artificial",
+        "docente": "banyo",
+        "descripcion": "Estudio de algoritmos de aprendizaje automático."
+    },
+    {
+        "nombre": "Física",
+        "docente": "juan",
+        "descripcion": "Conceptos fundamentales de la física clásica."
+    },
+    {
+        "nombre": "Desarrollo web",
+        "docente": "pedro",
+        "descripcion": "Construcción de aplicaciones web interactivas."
+    },
+    {
+        "nombre": "UX",
+        "docente": "alejandra",
+        "descripcion": "Diseño centrado en el usuario y experiencia de usuario."
+    }
+]

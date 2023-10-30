@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Información de Materias</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            function cargarInformacionMaterias() {
+                $.ajax({
+                    url: 'materias.json', // Ruta al archivo JSON
+                    dataType: 'json',
+                    success: function(data) {
+                        const container = document.getElementById('materias-container');
+                        for (const materia of data) {
+                            const materiaDiv = document.createElement('div');
+                            materiaDiv.classList.add('materia');
+
+                            const nombre = document.createElement('h2');
+                            nombre.textContent = `Materia: ${materia.nombre}`;
+
+                            const docente = document.createElement('p');
+                            docente.textContent = `Docente: ${materia.docente}`;
+
+                            const descripcion = document.createElement('p');
+                            descripcion.textContent = `Descripción: ${materia.descripcion}`;
+
+                            materiaDiv.appendChild(nombre);
+                            materiaDiv.appendChild(docente);
+                            materiaDiv.appendChild(descripcion);
+
+                            container.appendChild(materiaDiv);
+                        }
+                    }
+                });
+            }
+
+            cargarInformacionMaterias();
+        });
+    </script>
+    <style>
+        .materia {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <h1>Materias del Semestre</h1>
+    <div id="materias-container"></div>
+</body>
+</html>
